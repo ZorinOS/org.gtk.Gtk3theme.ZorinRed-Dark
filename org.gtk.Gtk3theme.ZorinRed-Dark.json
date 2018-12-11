@@ -1,0 +1,43 @@
+{
+  "id": "org.gtk.Gtk3theme.ZorinRed-Dark",
+  "branch": "3.22",
+  "runtime": "org.gnome.Sdk",
+  "build-extension": true,
+  "sdk": "org.gnome.Sdk",
+  "runtime-version": "3.28",
+  "appstream-compose": false,
+  "separate-locales": false,
+  "modules": [
+    {
+      "name": "ZorinRed-Dark",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -dm755 /usr/share/runtime/share/themes/ZorinRed-Dark/gtk-3.0",
+        "cp -aL ZorinRed-Dark/gtk-3.0/* /usr/share/runtime/share/themes/ZorinRed-Dark/gtk-3.0",
+        "cp -a ZorinRed-Dark/index.theme /usr/share/runtime/share/themes/ZorinRed-Dark"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/ZorinOS/zorin-desktop-themes/archive/2.0.3.tar.gz",
+          "sha256": "6d9ed28ff9fb1cf77bf8a92ac0ded3806f2442dbc2a643066ea71055e3ad1f32"
+        }
+      ]
+    },
+    {
+      "name": "appdata",
+      "buildsystem": "simple",
+      "build-commands": [
+        "mkdir -p ${FLATPAK_DEST}/share/appdata",
+        "cp org.gtk.Gtk3theme.ZorinRed-Dark.appdata.xml ${FLATPAK_DEST}/share/appdata",
+        "appstream-compose --basename=org.gtk.Gtk3theme.ZorinRed-Dark --prefix=${FLATPAK_DEST} --origin=flatpak org.gtk.Gtk3theme.ZorinRed-Dark"
+      ],
+      "sources": [
+        {
+          "type": "file",
+          "path": "org.gtk.Gtk3theme.ZorinRed-Dark.appdata.xml"
+        }
+      ]
+}
+  ]
+}
