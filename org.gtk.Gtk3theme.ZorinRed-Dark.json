@@ -4,7 +4,7 @@
   "runtime": "org.freedesktop.Platform",
   "build-extension": true,
   "sdk": "org.freedesktop.Sdk",
-  "runtime-version": "18.08",
+  "runtime-version": "20.08",
   "appstream-compose": false,
   "separate-locales": false,
   "modules": [
@@ -12,15 +12,14 @@
       "name": "ZorinRed-Dark",
       "buildsystem": "simple",
       "build-commands": [
-        "install -dm755 /usr/share/runtime/share/themes/ZorinRed-Dark/gtk-3.0",
-        "cp -aL ZorinRed-Dark/gtk-3.0/* /usr/share/runtime/share/themes/ZorinRed-Dark/gtk-3.0",
-        "cp -a ZorinRed-Dark/index.theme /usr/share/runtime/share/themes/ZorinRed-Dark"
+        "mkdir -pm 755 /usr/share/runtime/share/themes/ZorinRed-Dark/gtk-3.0",
+        "cp -fr ZorinRed-Dark/gtk-3.0/* /usr/share/runtime/share/themes/ZorinRed-Dark/gtk-3.0"
       ],
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/ZorinOS/zorin-desktop-themes/archive/2.1.5.tar.gz",
-          "sha256": "b7c829ee66c50560e86e2c41b27434a822df2d10c2ef99d264b94b74f6c6ff05"
+          "url": "https://github.com/ZorinOS/zorin-desktop-themes/archive/3.3.1.tar.gz",
+          "sha256": "34af198ac430f3b3d1a8abe5b39cc65c46152fdff16aa62ad910f301f7f89882"
         }
       ]
     },
