@@ -4,7 +4,7 @@
   "runtime": "org.freedesktop.Platform",
   "build-extension": true,
   "sdk": "org.freedesktop.Sdk",
-  "runtime-version": "20.08",
+  "runtime-version": "21.08",
   "appstream-compose": false,
   "separate-locales": false,
   "modules": [
@@ -18,8 +18,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/ZorinOS/zorin-desktop-themes/archive/3.3.1.tar.gz",
-          "sha256": "34af198ac430f3b3d1a8abe5b39cc65c46152fdff16aa62ad910f301f7f89882"
+          "url": "https://github.com/ZorinOS/zorin-desktop-themes/archive/3.4.4.tar.gz",
+          "sha256": "8d22ad203116990db33809d34b2d07c7f87fce6a402fc8e86295c4baac5d51e1"
         }
       ]
     },
