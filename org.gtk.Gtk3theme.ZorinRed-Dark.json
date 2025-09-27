@@ -17,8 +17,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/ZorinOS/zorin-desktop-themes/archive/5.0.5.tar.gz",
-          "sha256": "ff820e004cce9d53a4854b6903612507d645ba8204953049531c0ddec73f3cb0"
+          "url": "https://github.com/ZorinOS/zorin-desktop-themes/archive/5.1.2.tar.gz",
+          "sha256": "23717acf7c0129712c01206906c6db81292fe4490f7c8b43f972cd64ad3e3585"
         }
       ]
     },
